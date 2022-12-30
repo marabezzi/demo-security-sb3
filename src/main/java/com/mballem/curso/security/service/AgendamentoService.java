@@ -4,8 +4,6 @@ import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 
-import jakarta.servlet.http.HttpServletRequest;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
@@ -18,6 +16,8 @@ import com.mballem.curso.security.domain.Horario;
 import com.mballem.curso.security.exception.AcessoNegadoException;
 import com.mballem.curso.security.repository.AgendamentoRepository;
 import com.mballem.curso.security.repository.projection.HistoricoPaciente;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Service
 public class AgendamentoService {

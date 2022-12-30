@@ -2,13 +2,14 @@ package com.mballem.curso.security;
 
 import java.util.TimeZone;
 
-import jakarta.annotation.PostConstruct;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import jakarta.annotation.PostConstruct;
+
 @SpringBootApplication
+//@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
 public class DemoSecurityApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
