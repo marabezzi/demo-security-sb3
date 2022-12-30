@@ -8,7 +8,8 @@ import java.time.LocalDate;
  */
 public class MedicoDto implements Serializable {
     
-    private String nome;
+    private static final long serialVersionUID = 1L;
+	private String nome;
     private String crm;
     private LocalDate dtInscricao;
     private String[] especialidades;

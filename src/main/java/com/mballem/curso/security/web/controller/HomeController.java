@@ -1,6 +1,5 @@
 package com.mballem.curso.security.web.controller;
 
-import org.springframework.security.core.session.SessionRegistryImpl;
 import org.springframework.security.web.authentication.session.SessionAuthenticationException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

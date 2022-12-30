@@ -1,12 +1,8 @@
 package com.mballem.curso.security.web.controller;
 
-import com.mballem.curso.security.domain.Medico;
-import com.mballem.curso.security.domain.Perfil;
-import com.mballem.curso.security.domain.PerfilTipo;
-import com.mballem.curso.security.domain.Usuario;
-import com.mballem.curso.security.service.MedicoService;
-import com.mballem.curso.security.service.UsuarioService;
-import org.springframework.beans.BeanUtils;
+import java.util.Arrays;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
@@ -15,14 +11,23 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.mballem.curso.security.domain.Medico;
+import com.mballem.curso.security.domain.Perfil;
+import com.mballem.curso.security.domain.PerfilTipo;
+import com.mballem.curso.security.domain.Usuario;
+import com.mballem.curso.security.service.MedicoService;
+import com.mballem.curso.security.service.UsuarioService;
+
 import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletRequest;
-import java.util.Arrays;
-import java.util.List;
 
 @Controller
 @RequestMapping("u")

@@ -1,0 +1,39 @@
+server:
+  serlvlet:
+    session:
+      timeout: 1m
+      
+spring:
+  datasource:
+    #driver-class-name: com.mysql.jdbc.Driver
+    password: 1234
+    url: jdbc:mysql://localhost:3306/demo_security?useTimezone=true&serverTimezone=America/Sao_Paulo&useSSL=false&allowPublicKeyRetrieval=true
+    username: admin
+    
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: none
+    open-in-view: true
+    show-sql: true
+    
+  mail:
+    host: smtp.gmail.com
+    password: ykaxgpzxmpxlicoz
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+            trust: smtp.gmail.com
+          starttls:
+            enable: true
+            required: true
+    protocol: smtp
+    test-connection: true
+    username: financeiro.zezinhotecidos@gmail.com
+    
+  thymeleaf:
+    cache: false

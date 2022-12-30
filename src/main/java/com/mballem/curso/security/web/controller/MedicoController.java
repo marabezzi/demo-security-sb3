@@ -1,18 +1,21 @@
 package com.mballem.curso.security.web.controller;
 
-import com.mballem.curso.security.domain.Medico;
-import com.mballem.curso.security.domain.Usuario;
-import com.mballem.curso.security.dto.MedicoDto;
-import com.mballem.curso.security.service.MedicoService;
-import com.mballem.curso.security.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.mballem.curso.security.domain.Medico;
+import com.mballem.curso.security.domain.Usuario;
+import com.mballem.curso.security.service.MedicoService;
+import com.mballem.curso.security.service.UsuarioService;
 
 @Controller 
 @RequestMapping("medicos")

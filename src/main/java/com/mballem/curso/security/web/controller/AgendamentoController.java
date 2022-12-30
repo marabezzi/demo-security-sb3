@@ -1,11 +1,7 @@
 package com.mballem.curso.security.web.controller;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 
-import jakarta.servlet.http.HttpServletRequest;
-
-import com.mballem.curso.security.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
@@ -22,9 +18,15 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.mballem.curso.security.domain.Agendamento;
+import com.mballem.curso.security.domain.Especialidade;
+import com.mballem.curso.security.domain.Paciente;
+import com.mballem.curso.security.domain.PerfilTipo;
 import com.mballem.curso.security.service.AgendamentoService;
 import com.mballem.curso.security.service.EspecialidadeService;
 import com.mballem.curso.security.service.PacienteService;
+
+import jakarta.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("agendamentos")
