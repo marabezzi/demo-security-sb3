@@ -24,6 +24,6 @@ public class DemoSecurityApplication implements CommandLineRunner {
 	@PostConstruct
 	public void init(){
 		// Setting Spring Boot SetTimeZone
-		TimeZone.setDefault(TimeZone.getTimeZone("America/Recife"));
+		TimeZone.setDefault(TimeZone.getTimeZone("America/SaoPaulo"));
 	}
 }
